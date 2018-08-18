@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/marginBottom">
+
+    <LinearLayout
+        android:layout_width="@dimen/timeTableWidth"
+        android:layout_height="match_parent"
+        android:background="@color/greenTime"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/platform"
+        android:layout_alignTop="@+id/platform"
+        android:id="@+id/timeTable">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrivalTime"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/singleRefresh"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:paddingBottom="@dimen/smallPad"
+        android:paddingTop="@dimen/smallPad"
+        android:id="@+id/platform"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/destinationSchedule"
+        android:layout_toRightOf="@+id/timeTable"
+        android:layout_toEndOf="@+id/timeTable">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/platformPlace"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nowTime"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/statusSize"
+            android:id="@+id/status"
+            android:textColor="@color/greenTime"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingBottom"
+        android:id="@+id/destinationSchedule">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/blueTime"
+            android:id="@+id/destinationTime"
+            android:paddingBottom="@dimen/paddingBottom"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/destination"
+            android:textColor="@color/black"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

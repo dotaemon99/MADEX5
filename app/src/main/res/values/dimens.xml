@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="mainMargin">16dp</dimen>
+    <dimen name="paddingItem">8dp</dimen>
+    <dimen name="timeTableWidth">64dp</dimen>
+    <dimen name="paddingVertical">8dp</dimen>
+    <dimen name="paddingLeft">16dp</dimen>
+    <dimen name="paddingRight">24dp</dimen>
+    <dimen name="statusSize">22sp</dimen>
+    <dimen name="paddingBottom">5dp</dimen>
+    <dimen name="cornerRadius">2dp</dimen>
+    <dimen name="stroke">0.5dp</dimen>
+    <dimen name="marginBottom">12dp</dimen>
+    <dimen name="smallPad">2dp</dimen>
+</resources>
